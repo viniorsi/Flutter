@@ -1,0 +1,8 @@
+version: "Apple Swift version 5.8.1 (swiftlang-5.8.0.124.5 clang-1403.0.22.11.100)"
+options: "d5f9902d5f8816a3139e4881cba487399c88aebf22402f968383dd4c98ae2a19"
+build_start_time: [1693422213, 251814000]
+build_end_time: [1693422219, 860517000]
+inputs:
+  "/Users/paulosabra/Projects/counter-bloc/macos/Flutter/GeneratedPluginRegistrant.swift": [1693422185, 253032119]
+  "/Users/paulosabra/Projects/counter-bloc/macos/Runner/AppDelegate.swift": [1631664947, 601340600]
+  "/Users/paulosabra/Projects/counter-bloc/macos/Runner/MainFlutterWindow.swift": [1684420626, 525686064]
