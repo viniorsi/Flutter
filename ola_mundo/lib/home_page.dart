@@ -16,6 +16,38 @@ class HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      drawer: Drawer(
+        child: Column(
+          children: [
+            UserAccountsDrawerHeader(
+              // currentAccountPicture: Image.asset('assets/imagens/perfil.png'),
+              currentAccountPicture: ClipOval(
+                child: Image.network(
+                    'https://avatars.githubusercontent.com/u/92038746?v=4'),
+              ),
+              currentAccountPictureSize: const Size(70, 70),
+              accountName: const Text('Vinicin'),
+              accountEmail: const Text('Vinicin@cleberson.com'),
+            ),
+            ListTile(
+              leading: const Icon(Icons.home),
+              title: const Text("Inicio"),
+              subtitle: const Text('tela de inicio'),
+              onTap: () {
+                print('home');
+              },
+            ),
+            ListTile(
+              leading: const Icon(Icons.home),
+              title: const Text("Logout"),
+              subtitle: const Text('Sair e finalizar sessão'),
+              onTap: () {
+                Navigator.of(context).pushReplacementNamed('/');
+              },
+            ),
+          ],
+        ),
+      ),
       appBar: AppBar(
         title: Text(
             AppController.instance.isDarkTheme ? "Tema Escuro" : "Tema Claro"),
